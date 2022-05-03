@@ -37,7 +37,7 @@ h2{
 #contacto{
 	display: flex;
 	flex-wrap: wrap;
-	align-content: flex-start;
+	align-items: flex-start;
 	margin: 1rem;
 }
 
@@ -78,6 +78,35 @@ textarea{
 	width: 100%;
 }
 
+#grande td{
+	width: 16.66%;
+}
+
+#grande img{
+	width: 100%
+}
+
+#pequeña{
+	text-align: center;
+}
+
+#grande tr>td:first-child{
+	font-size: 2rem;
+	color: green;
+}
+
+#grande tr>td:nth-child(n+2)>p:first-child{
+	color: red;
+	font-weight: bold;
+}
+
+#grande th{
+	color: blue;
+}
+
+#pequeña{
+	display: none;
+}
 
 /* tablet */
 
@@ -97,7 +126,21 @@ textarea{
 		order: 2;
 	
 	}
+	#contacto form{
+		margin: auto;
+	}
 	textarea{
 		column-span: 10;
+	}
+
+	#grande{
+		display: none;
+	}
+	#pequeña{
+		display: table;
+	}
+
+	#pequeña tr:nth-child(9n){
+		color: blue;
 	}
 }
