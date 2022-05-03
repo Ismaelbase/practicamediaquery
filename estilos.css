@@ -1,6 +1,7 @@
 body{
 	max-width: 1200px;
 	margin: auto;
+
 }
 
 .fila{
@@ -28,6 +29,7 @@ h2{
 	text-align: center;
 	width: 100%;
 	display: block;
+	font-family: LifeCraft_Font;
 }
 .fila button{
 	width: 46%;
@@ -78,7 +80,7 @@ textarea{
 	width: 100%;
 }
 
-#grande td{
+#grande td,th{
 	width: 16.66%;
 }
 
@@ -93,15 +95,23 @@ textarea{
 #grande tr>td:first-child{
 	font-size: 2rem;
 	color: green;
+	font-family: LifeCraft_Font;
 }
 
 #grande tr>td:nth-child(n+2)>p:first-child{
 	color: red;
 	font-weight: bold;
+	font-family: LifeCraft_Font;
 }
 
 #grande th{
 	color: blue;
+	font-family: LifeCraft_Font;
+}
+p {
+   font-family: 'StandardGrafRegular';
+   font-weight: normal;
+   font-style: normal;
 }
 
 #pequeña{
@@ -140,7 +150,24 @@ textarea{
 		display: table;
 	}
 
-	#pequeña tr:nth-child(9n){
+	#pequeña tr:nth-child(12n+1){
 		color: blue;
+		font-size: 2rem;
+		font-weight: bold;
+		font-family: LifeCraft_Font;
+	}
+
+	#pequeña th{
+		font-family: LifeCraft_Font;
+	}
+
+	#pequeña .skill{
+		color: darkred;
+		font-family: LifeCraft_Font;
+	}
+	
+	
+	#pequeña img{
+		width: 100%;
 	}
 }
