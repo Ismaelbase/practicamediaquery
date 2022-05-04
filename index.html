@@ -30,6 +30,7 @@
 				</p>
 			</div>
 		</div>
+		<button id="desaparecido">VER MAS...</button>
 		<div class="contenido">
 			<h2>Sílfides</h2>
 			<div class="texto_imagen">
@@ -40,7 +41,7 @@
 				</p>
 			</div>
 		</div>
-			<button>VER MÁS</button>
+			<button class="desaparece">VER MÁS</button>
 			<button>VER MÁS</button>
 	</div>
 		<div class="fila">
@@ -56,6 +57,7 @@
 				</p>
 			</div>
 		</div>
+		<button id="desaparecido">VER MAS...</button>
 		<div class="contenido">
 			<h2>Sílfides</h2>
 			<div class="texto_imagen">
@@ -66,7 +68,7 @@
 				</p>
 			</div>
 		</div>
-			<button>VER MÁS</button>
+			<button class="desaparece">VER MÁS</button>
 			<button>VER MÁS</button>
 	</div>
 
@@ -114,7 +116,7 @@
 					Necroseñores
 				</th>
 				<th>
-					Sílvides nocturnas
+					Sílfides nocturnas
 				</th>
 				<th>
 					Set
@@ -265,7 +267,7 @@
 						Invocas a las sílfides nocturnas y recibes una erupción de energía que te permite canalizar un rápido aluvión de 16 hechizos y facultades de druida durante 4 s.
 					</p>
 					<p>
-						Lanzas Fuego lunar, Cólera, Recrecimiento, Rejuvenecimiento, Vapulear, Arañazo, Triturar y Pelaje férreo contra objetivos cercanos apropiados, según tu especialización actual.
+						Lanzas Fuego lunar, Cólera, Recrecimiento, Rejuvenecimiento, Vapulear, Arañazo, Triturar y Pelaje férreo contra objetivos cercanos apropiados.
 					</p>
 				</td>
 				<td>
@@ -291,7 +293,7 @@
 						Disparo despellejador
 					</p>
 					<p>
-						Dispara un tiro a tu enemigo, que recibe daño de las Sombras de sangrado en el tiempo. Cada vez que Disparo despellejador inflige daño, tienes una probabilidad de obtener Marca del despellejador, que provoca que tu siguiente Disparo mortal se pueda usar en cualquier objetivo, sin importar su salud.
+						Dispara un tiro a tu enemigo, que recibe daño de las Sombras de sangrado en el tiempo. Cada vez que Disparo despellejador inflige daño, tienes una probabilidad de obtener Marca del despellejador.
 					</p>
 				</td>
 				<td>
@@ -312,9 +314,6 @@
 					<p>
 						Invoca un espíritu salvaje en la ubicación seleccionada que aplica Marca salvaje durante 15 s a todos los objetivos enemigos que se encuentren debajo.
 					</p>
-					<p>
-						Mientras esté activo el espíritu salvaje, cada facultad que utilices contra un objetivo afectado por la Marca salvaje invocará una bestia espíritu que inflige daño de Naturaleza a tu objetivo.
-					</p>
 				</td>
 				<td>
 					<img src="img/hunter_set1.png" alt="Set del cazador.">
@@ -334,7 +333,7 @@
 						Conjura una chispa radiante que inflige daño Arcano al instante y daño extra en el tiempo.
 					</p>
 					<p>
-						El objetivo recibe un porcentaje más de daño de tus hechizos de daño directo, daño que se acumula cada vez que es alcanzado. Este efecto termina al cabo de un determinado número de hechizos.
+						El objetivo recibe un porcentaje más de daño de tus hechizos de daño directo, daño que se acumula cada vez que es alcanzado.
 					</p>
 				</td>
 				<td>
@@ -343,9 +342,6 @@
 					</p>
 					<p>
 						Conjuras espejos para atormentar al enemigo durante un tiempo. Cuando el objetivo lanza un hechizo o facultad, uno de los espejos se consume e inflige daño de las Sombras y reduce su velocidad de movimiento y su velocidad de lanzamiento.
-					</p>
-					<p>
-						El último espejo inflige daño de las Sombras al enemigo y lo enraíza y silencia durante un tiempo.
 					</p>
 				</td>
 				<td>
@@ -388,7 +384,7 @@
 						Durante un breve periodo, tu maestría aumenta en un porcentaje. Además:
 					</p>
 					<p>
-						El tiempo de reutilización de Patada del sol naciente de los Viajero del viento se reinicia al instante, y Patada del sol naciente reduce el coste de las facultades de chi.
+						El tiempo de reutilización de Patada del sol naciente de los Viajero del viento se reinicia al instante, y Patada del sol naciente.
 					</p>
 				</td>
 				<td>
@@ -404,7 +400,7 @@
 						Brebaje de polvohueso
 					</p>
 					<p>
-						Lanza al suelo un brebaje creado con los huesos de tus enemigos que envuelve a todos los objetivos alcanzados durante 10 s. Tus facultades tienen un 15 % más de afectar al objetivo una segunda vez, con un 25 % de efectividad como sanación o daño de las Sombras.
+						Lanza al suelo un brebaje creado con los huesos de tus enemigos que envuelve a todos los objetivos alcanzados durante 10 s. Tus facultades tienen un 15 % más de afectar al objetivo una segunda vez.
 					</p>
 				</td>
 				<td>
@@ -412,7 +408,7 @@
 						Pisotón de silfelino
 					</p>
 					<p>
-						Golpea el suelo con ferocidad para que aparezca un silfelino durante 30 s que inflige daño de Naturaleza y realiza una acción en función de tu especialización. Tus facultades tienen una probabilidad del 10 % de restablecer el tiempo de reutilización de Pisotón de silfelino mientras luchas sobre un silfelino.
+						Golpea el suelo con ferocidad para que aparezca un silfelino durante 30 s que inflige daño de Naturaleza y realiza una acción en función de tu especialización.
 					</p>
 				</td>
 				<td>
@@ -439,9 +435,6 @@
 					</p>
 					<p>
 						Santifica la zona seleccionada, lo que inflige daño de las Sombras dividido entre los enemigos y restaura salud dividida entre los aliados heridos en el tiempo.
-					</p>
-					<p>
-						La tierra permanece llena de ánima, lo que inflige daño de las Sombras adicional a todos los enemigos. Obtienes los beneficios de Consagración mientras estés en el área.
 					</p>
 				</td>
 				<td>
@@ -782,7 +775,7 @@
 						Invocas a las sílfides nocturnas y recibes una erupción de energía que te permite canalizar un rápido aluvión de 16 hechizos y facultades de druida durante 4 s.
 					</p>
 					<p>
-						Lanzas Fuego lunar, Cólera, Recrecimiento, Rejuvenecimiento, Vapulear, Arañazo, Triturar y Pelaje férreo contra objetivos cercanos apropiados, según tu especialización actual.
+						Lanzas Fuego lunar, Cólera, Recrecimiento, Rejuvenecimiento, Vapulear, Arañazo, Triturar y Pelaje férreo contra objetivos cercanos apropiados.
 					</p>
 				</td>
 			</tr>
