@@ -495,9 +495,14 @@ th{
 		color: #FFFFFF;
 	}
 
-
-
-
+	#pequeña th{
+	color: white;
+	padding: 0.2rem;
+	background: black;
+	font-family: 'StandardGrafRegular';
+	letter-spacing: 3px;
+	font-size: 1.8rem;
+	}
 }
 
 
