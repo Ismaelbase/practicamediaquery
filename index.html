@@ -4,9 +4,16 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/piazzolla" type="text/css"/>
 	<style>
 		@font-face {
 			font-family: LifeCraft_Font;
+			src: url(fonts/Friz Quadrata Bold.otf);
+		}
+	</style>
+	<style>
+		@font-face {
+			font-family: Friz_Quadrata_Bold;
 			src: url(fonts/LifeCraft_Font.ttf);
 		}
 	</style>
@@ -14,9 +21,6 @@
 	<title>Curias World of Warcraft</title>
 </head>
 <body>
-
-
-
 	<div class="fila">
 		<div class="contenido">
 			<h2>Kyrianos</h2>
@@ -59,7 +63,7 @@
 		</div>
 		<button id="desaparecido">VER MAS...</button>
 		<div class="contenido">
-			<h2>Sílfides</h2>
+			<h2>Venthyr</h2>
 			<div class="texto_imagen">
 				<p>
 					<img src="img/Venthyr2.jpg" alt="Imagen del lider de los Venthyr.">
@@ -80,13 +84,13 @@
 		<form action="">
 			<div id="labels">
 				<div class="info">
-				<label for="nomb">Nombre: </label>
-				<input type="text" name="nomb">
-			</div>
-			<div class="info">
-				<label for="mail">Correo: </label>
-				<input type="email" name="mail">
-			</div>
+					<label for="nomb">Nombre: </label>
+					<input type="text" name="nomb">
+				</div>
+				<div class="info">
+					<label for="mail">Correo: </label>
+					<input type="email" name="mail">
+				</div>
 			</div>
 			
 			<legend>Motivo del contacto: </legend>
@@ -100,6 +104,10 @@
 		</form>
 	</div>
 	<br>
+
+	<div id="contenedor_tabla">
+		
+	
 	<table id="grande">
 		<thead>
 			<tr>
@@ -113,10 +121,10 @@
 					Venthyr
 				</th>
 				<th>
-					Necroseñores
+					Necro-señores
 				</th>
 				<th>
-					Sílfides nocturnas
+					Sílfides
 				</th>
 				<th>
 					Set
@@ -172,7 +180,7 @@
 					</p>
 				</td>
 				<td>
-					<img src="img/dk_set1.png" alt="Set del caballero de la muerte.">
+					<img src="img/dk_set2.png" alt="Set del caballero de la muerte.">
 				</td>
 			</tr>
 			<tr>
@@ -205,7 +213,7 @@
 						Pasto de las llamas
 					</p>
 					<p>
-						Solicita un duelo a muerte contra un demonio condenado del Teatro del Dolor. Al vencer a tu enemigo, se libera su alma de demonio y se genera un charco de sangre demoníaca. Si luchas dentro del charco, tu velocidad de ataque aumenta un 20 % y se reduce un 10 % el daño que te infligen los enemigos. Modelar carne trata al demonio condenado como enemigo poderoso.
+						Solicita un duelo a muerte contra un demonio condenado del Teatro del Dolor. Al vencer a tu enemigo, se libera su alma de demonio y se genera un charco de sangre demoníaca. Si luchas dentro del charco, tu velocidad de ataque aumenta un 20 % y se reduce un 10 % el daño que te infligen los enemigos.
 					</p>
 				</td>
 				<td>
@@ -220,7 +228,7 @@
 					</p>
 				</td>
 				<td>
-					<img src="img/dh_set2.png" alt="Set del cazador de demonios.">
+					<img src="img/dh_set3.png" alt="Set del cazador de demonios.">
 				</td>
 			</tr>
 			<tr>
@@ -271,7 +279,7 @@
 					</p>
 				</td>
 				<td>
-					<img src="img/druid_set1.png" alt="Set del druida.">
+					<img src="img/druid_set2.png" alt="Set del druida.">
 				</td>
 			</tr>
 			<tr>
@@ -316,7 +324,7 @@
 					</p>
 				</td>
 				<td>
-					<img src="img/hunter_set1.png" alt="Set del cazador.">
+					<img src="img/hunter_set2.png" alt="Set del cazador.">
 				</td>
 			</tr>
 			<tr>
@@ -367,7 +375,7 @@
 					</p>
 				</td>
 				<td>
-					<img src="img/mage_set1.png" alt="Set del mago.">
+					<img src="img/mage_set2.png" alt="Set del mago.">
 				</td>
 			</tr>
 			<tr>
@@ -412,7 +420,7 @@
 					</p>
 				</td>
 				<td>
-					<img src="img/monk_set1.png" alt="Set del monje.">
+					<img src="img/monk_set2.png" alt="Set del monje.">
 				</td>
 			</tr>
 			<tr>
@@ -468,7 +476,7 @@
 						Favor de los Ascendidos
 					</p>
 					<p>
-						Obtienes el Favor de los Ascendidos, que te permite acceder a Nova ascendida y Explosión ascendida y aumenta tu velocidad de movimiento. Ambas facultades infligen daño a tus enemigos, sanan a tus aliados y acumulan un poder que culmina con una potente explosión de daño y sanación cuando termina Favor de los Ascendidos.
+						Obtienes el Favor de los Ascendidos, que te permite acceder a Nova ascendida y Explosión ascendida y aumenta tu velocidad de movimiento. Ambas facultades infligen daño a tus enemigos, sanan a tus aliados y acumulan un poder que culmina con una potente explosión.
 					</p>
 				</td>
 				<td>
@@ -502,7 +510,7 @@
 					</p>
 				</td>
 				<td>
-					<img src="img/priest_set1.png" alt="Set del sacerdote.">
+					<img src="img/priest_set2.png" alt="Set del sacerdote.">
 				</td>
 			</tr>
 		</tbody>
@@ -516,7 +524,7 @@
 			</tr>
 			<tr>
 				<td>
-					<p>
+					<p class="clase_p">
 						Caballero de la Muerte
 					</p>
 				</td>
@@ -528,7 +536,7 @@
 			</tr>
 			<tr>
 				<td>
-					<img src="img/dk_set1.png" alt="Set del caballero de la muerte.">
+					<img src="img/dk_set2.png" alt="Set del caballero de la muerte.">
 				</td>
 			</tr>
 			<tr>
@@ -584,7 +592,7 @@
 			</tr>
 			<tr>
 				<th>
-					Sílfides nocturnas
+					Sílfides
 				</th>
 			</tr>
 			<tr>
@@ -607,7 +615,7 @@
 			</tr>
 			<tr>
 				<td>
-					<p>
+					<p class="clase_p">
 						Cazador de demonios
 					</p>
 				</td>
@@ -619,7 +627,7 @@
 			</tr>
 			<tr>
 				<td>
-					<img src="img/dh_set2.png" alt="Set del cazador de demonios.">
+					<img src="img/dh_set3.png" alt="Set del cazador de demonios.">
 				</td>
 			</tr>
 			<tr>
@@ -672,7 +680,7 @@
 			</tr>
 			<tr>
 				<th>
-					Sílfides nocturnas
+					Sílfides 
 				</th>
 			</tr>
 			<tr>
@@ -695,7 +703,7 @@
 			</tr>
 			<tr>
 				<td>
-					<p>
+					<p class="clase_p">
 						Druida
 					</p>
 				</td>
@@ -707,7 +715,7 @@
 			</tr>
 			<tr>
 				<td>
-					<img src="img/druid_set1.png" alt="Set del druida.">
+					<img src="img/druid_set2.png" alt="Set del druida.">
 				</td>
 			</tr>
 			<tr>
@@ -763,7 +771,7 @@
 			</tr>
 			<tr>
 				<th>
-					Sílfides nocturnas
+					Sílfides 
 				</th>
 			</tr>
 			<tr>
@@ -786,7 +794,7 @@
 			</tr>
 			<tr>
 				<td>
-					<p>
+					<p class="clase_p">
 						Cazador
 					</p>
 				</td>
@@ -798,7 +806,7 @@
 			</tr>
 			<tr>
 				<td>
-					<img src="img/hunter_set1.png" alt="Set del cazador.">
+					<img src="img/hunter_set2.png" alt="Set del cazador.">
 				</td>
 			</tr>
 			<tr>
@@ -851,7 +859,7 @@
 			</tr>
 			<tr>
 				<th>
-					Sílfides nocturnas
+					Sílfides 
 				</th>
 			</tr>
 			<tr>
@@ -874,7 +882,7 @@
 			</tr>
 			<tr>
 				<td>
-					<p>
+					<p class="clase_p">
 						Mago
 					</p>
 				</td>
@@ -886,7 +894,7 @@
 			</tr>
 			<tr>
 				<td>
-					<img src="img/mage_set1.png" alt="Set del mago.">
+					<img src="img/mage_set2.png" alt="Set del mago.">
 				</td>
 			</tr>
 			<tr>
@@ -945,7 +953,7 @@
 			</tr>
 			<tr>
 				<th>
-					Sílfides nocturnas
+					Sílfides 
 				</th>
 			</tr>
 			<tr>
@@ -968,7 +976,7 @@
 			</tr>
 			<tr>
 				<td>
-					<p>
+					<p class="clase_p">
 						Paladín
 					</p>
 				</td>
@@ -1033,7 +1041,7 @@
 			</tr>
 			<tr>
 				<th>
-					Sílfides nocturnas
+					Sílfides 
 				</th>
 			</tr>
 			<tr>
@@ -1053,7 +1061,7 @@
 			</tr>
 			<tr>
 				<td>
-					<p>
+					<p class="clase_p">
 						Sacerdote
 					</p>
 				</td>
@@ -1065,7 +1073,7 @@
 			</tr>
 			<tr>
 				<td>
-					<img src="img/priest_set1.png" alt="Set del sacerdote.">
+					<img src="img/priest_set2.png" alt="Set del sacerdote.">
 				</td>
 			</tr>
 			<tr>
@@ -1121,7 +1129,7 @@
 			</tr>
 			<tr>
 				<th>
-					Sílfides nocturnas
+					Sílfides 
 				</th>
 			</tr>
 			<tr>
@@ -1136,5 +1144,6 @@
 			</tr>
 		</tbody>
 	</table>
+	</div>
 </body>
 </html>
