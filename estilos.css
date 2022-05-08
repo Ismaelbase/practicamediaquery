@@ -467,7 +467,7 @@ th{
 		font-family: 'StandardGrafRegular';
 	}
 
-	#pequeña tr:nth-child(2n+6)>td>p:first-child{
+	#pequeña tr:nth-child(2n+2)>td>p:first-child{
 		color: #C41F3B;
     
 	}
