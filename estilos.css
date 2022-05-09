@@ -20,9 +20,17 @@ body{
 	/*background-image: url("img/fondo1.jpg");*/
 	padding-bottom: 3rem;
 	background-color: #101010;
-	box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+	box-shadow: rgba(255, 255, 255, 0.8) 106px 0px 160px 0px, rgba(255, 255, 255, 0.8) -106px 0px 160px 0px;
 }
 
+
+body>h2:first-child{
+	font-size: 5rem;
+	padding: 0px;
+	margin: 0px;
+	letter-spacing: 16px;
+
+}
 p,label,h1,h2,legend{
 	color: white;
 }
@@ -124,6 +132,7 @@ label,legend{
 	flex-wrap: wrap;
 	align-items: flex-start;
 	margin: 1rem;
+
 }
 
 #contacto img{
@@ -203,6 +212,7 @@ td>p{
 
 table{
 	width: 100%;
+	box-shadow: rgba(255, 255, 255, 0.8) 50px 0px 50px 0px, rgba(255, 255, 255, 0.8) -50px 0px 50px 0px;
 }
 
 #pequeña{
