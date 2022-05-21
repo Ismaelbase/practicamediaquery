@@ -10,10 +10,13 @@ color: #00FF96;
 color: #F58CBA;
 color: #FFFFFF;
 */
-
-
-
-body{
+#Formulario{
+	display: flex;
+	flex-wrap: wrap;
+	width: 20%;
+	padding-bottom: 1rem;
+}
+#cuerpo{
 	cursor: url('img/cursor_wow_1.png'), auto;
 	max-width: 1200px;
 	margin: auto;
@@ -23,8 +26,51 @@ body{
 	box-shadow: rgba(255, 255, 255, 0.8) 106px 0px 160px 0px, rgba(255, 255, 255, 0.8) -106px 0px 160px 0px;
 }
 
+nav{
+	cursor: url('img/cursor_wow_1.png'), auto;
+}
+#menu{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	border-bottom: #B79F6C solid 5px;
+	flex-wrap: wrap;
+	align-items: center;
+}
+#menu>img{
+	width: 7%;
+	padding-left: 5rem;
+	cursor: url('img/cursor_wow_2.png'), auto;
 
-body>h2:first-child{
+}
+
+#enlaces{
+	display: flex;
+	width: 30%;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+#enlaces a{
+	font-size: 3rem;
+	text-decoration: none;
+	color: white;
+	font-family: Fuente1;
+	cursor: url('img/cursor_wow_2.png'), auto;
+}
+i{
+	color: white;
+	padding-left: 1rem;
+	font-size: 2rem;
+	cursor: url('img/cursor_wow_2.png'), auto;
+}
+body{
+	padding: 0px;
+	margin: 0px;
+	background-color: #101010;
+}
+
+
+body>div>h2:first-child{
 	font-size: 5rem;
 	padding: 0px;
 	margin: 0px;
@@ -360,6 +406,9 @@ th{
 	display: none;
 }
 
+#nav{
+	display: ;
+}
 
 
 
