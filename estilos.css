@@ -13,12 +13,15 @@ color: #FFFFFF;
 #Formulario{
 	display: flex;
 	flex-wrap: wrap;
-	width: 20%;
+	padding-right: -2rem;
+	width: 18%;
 	padding-bottom: 1rem;
+
 }
 #cuerpo{
+	padding-top: 12rem;
 	cursor: url('img/cursor_wow_1.png'), auto;
-	max-width: 1200px;
+	max-width: 1300px;
 	margin: auto;
 	/*background-image: url("img/fondo1.jpg");*/
 	padding-bottom: 3rem;
@@ -32,16 +35,30 @@ nav{
 #menu{
 	display: flex;
 	width: 100%;
-	justify-content: space-between;
+
+	justify-content: space-around;
 	border-bottom: #B79F6C solid 5px;
 	flex-wrap: wrap;
+	background-image: url("img/slwallpaper.jpg");
+	background-position: 100% 20%;
 	align-items: center;
+	position: fixed;
 }
-#menu>img{
-	width: 7%;
-	padding-left: 5rem;
+#social2{
+	display: none;
+}
+#logo{
+	max-width:140px;
+  max-height:140px;
+  min-width:140px;
+  min-height:140px;
+	padding-right: 0px;
 	cursor: url('img/cursor_wow_2.png'), auto;
 
+}
+
+#logo img{
+	width: 100%;
 }
 
 #enlaces{
@@ -49,6 +66,7 @@ nav{
 	width: 30%;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	
 }
 #enlaces a{
 	font-size: 3rem;
@@ -56,12 +74,16 @@ nav{
 	color: white;
 	font-family: Fuente1;
 	cursor: url('img/cursor_wow_2.png'), auto;
+	-webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000000;
 }
 i{
 	color: white;
 	padding-left: 1rem;
 	font-size: 2rem;
 	cursor: url('img/cursor_wow_2.png'), auto;
+	-webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000000;
 }
 body{
 	padding: 0px;
@@ -69,6 +91,17 @@ body{
 	background-color: #101010;
 }
 
+#menu input{
+	background-color: #101010;
+	border: #8b8a8b;
+	color: white;
+	font-family: Fuente1;
+}
+#menu label{
+	-webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000000;
+  font-size: 1.5rem;
+}
 
 body>div>h2:first-child{
 	font-size: 5rem;
@@ -422,6 +455,36 @@ th{
 /* móvil */
 
 @media (max-width:575px){
+	#menu{
+		justify-content: space-evenly;
+	}
+	#social2{
+		display: flex;
+		justify-content: center;
+		background-color: ;
+	}
+
+	#enlaces {
+		font-size: 0.8rem;
+		padding-left: rem;
+		margin: 0px;
+	}
+	#menu>img{
+		width: 20%;
+		margin-left: 1rem;
+	}
+	#enlaces .animacion{
+		font-size: 2.2rem;
+		margin-left: 2rem;
+	}
+	#social{
+		display: none;
+	}
+	#Formulario{
+		padding-left: 0px;
+		padding-right: 4rem;
+	}
+
 	.texto_imagen img{
 		width: 50%;
 	}
@@ -567,3 +630,81 @@ th{
 
 
 
+.animacion{
+  position: relative;
+}
+
+.animacion::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+footer{
+	background-image: url("img/slwallpaper.jpg");
+	background-position: 100% 50%;
+	border-top: #B79F6C solid 5px;
+	height: 17.5vh;
+}
+
+
+
+
+@media (hover: hover) and (pointer: fine) {
+  .animacion:hover::before{
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+
+@media (max-width: 1500px){
+	
+
+	#social>a>i{
+		font-size: 1.7em;
+	}
+}
+
+@media (max-width: 1340px){
+	
+	#enlaces a{
+		font-size: 2.6em;
+	}
+
+	#social>a>i{
+		font-size: 1.5em;
+	}
+}
+
+@media (max-width: 1250px){
+	
+	#enlaces a{
+		font-size: 2.6em;
+	}
+
+	#social>a>i{
+		font-size: 1.2em;
+		padding-left: 0.4rem;
+	}
+}
+
+@media (max-width: 1150px) and (min-width: 991px){
+	
+	#enlaces a{
+		font-size: 2.2em;
+	}
+
+}
+
+@media (max-width: 990px) and (min-width:576px) {
+	
+	#enlaces a{
+		font-size: 2em;
+	}
+
+}
