@@ -18,6 +18,23 @@ color: #FFFFFF;
 	padding-bottom: 1rem;
 
 }
+
+#intro button{
+
+}
+
+#datos1,#datos2{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#datos1>input{
+	margin-left: 5rem;
+}
+#datos2>input{
+	margin-left: 0.55rem;
+}
 #cuerpo{
 	padding-top: 12rem;
 	cursor: url('img/cursor_wow_1.png'), auto;
@@ -36,7 +53,7 @@ nav{
 	display: flex;
 	width: 100%;
 
-	justify-content: space-around;
+	justify-content: space-between;
 	border-bottom: #B79F6C solid 5px;
 	flex-wrap: wrap;
 	background-image: url("img/slwallpaper.jpg");
@@ -59,17 +76,37 @@ nav{
 
 #logo img{
 	width: 100%;
-}
 
+}
+#boton1{
+	width: 79%;
+	margin-right: 33rem;
+}
 #enlaces{
 	display: flex;
-	width: 30%;
+	width: 50%;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	
 }
+#enlaces2{
+	display: none;
+	width: 50%;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
 #enlaces a{
-	font-size: 3rem;
+	font-size: 2em;
+	text-decoration: none;
+	color: white;
+	font-family: Fuente1;
+	cursor: url('img/cursor_wow_2.png'), auto;
+	-webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000000;
+}
+
+#enlaces2 a{
+	font-size: 2em;
 	text-decoration: none;
 	color: white;
 	font-family: Fuente1;
@@ -234,8 +271,10 @@ form{
 	box-sizing: border-box;
 	padding: 1rem;
 	width: 50%;
-	display: block;
+	display: flex;
+	flex-wrap: wrap;
 	padding-right: 2rem;
+	justify-content: center;
 }
 
 form button{
@@ -448,34 +487,72 @@ th{
 
 /* tablet */
 
-@media (min-width:576px) and (max-width:1199px){
+@media (min-width:720px) and (max-width:1000px){
+	#enlaces a{
+		font-size: 1.5rem;
+	}
 	
+}
+
+@media(min-width: 576px) and (max-width:  719px){
+	#enlaces{
+		display: none;
+	}
+
+	#enlaces2{
+		display: flex;
+		font-size: 0.9em;
+	}
+
 }
 
 /* móvil */
 
 @media (max-width:575px){
+	#enlaces{
+		width: 100%;
+	}
+	#boton1{
+		text-align: center;
+		width: 100%;
+		margin: 0px;
+	}
+	#logo{
+		order: -2;
+	}
+	#datos1{
+		margin: 0px;
+	}
+	#datos2{
+		margin: 0px;
+	}
+	#Formulario{
+		order: -1;
+	}
+	#Formulario form{
+		width: 100%;
+		box-sizing: content-box;
+	}
+	#pequeña .clase_p{
+		font-size: 0.2rem;
+	}
 	#menu{
 		justify-content: space-evenly;
 	}
 	#social2{
 		display: flex;
 		justify-content: center;
-		background-color: ;
+		
 	}
 
-	#enlaces {
-		font-size: 0.8rem;
-		padding-left: rem;
-		margin: 0px;
-	}
 	#menu>img{
 		width: 20%;
 		margin-left: 1rem;
 	}
 	#enlaces .animacion{
-		font-size: 2.2rem;
+		font-size: 1.5rem;
 		margin-left: 2rem;
+		padding-bottom: 1rem;
 	}
 	#social{
 		display: none;
@@ -663,18 +740,26 @@ footer{
   }
 
 @media (max-width: 1500px){
-	
 
 	#social>a>i{
 		font-size: 1.7em;
 	}
+	#datos1,#datos2{
+		display: block;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	#datos1>input{
+		margin-left: 0px;
+	}
+	#datos2>input{
+		margin-left: 0px;
+	}
 }
 
-@media (max-width: 1340px){
-	
-	#enlaces a{
-		font-size: 2.6em;
-	}
+@media (max-width: 1340px) and (min-width: 1251px){
+
 
 	#social>a>i{
 		font-size: 1.5em;
@@ -682,10 +767,7 @@ footer{
 }
 
 @media (max-width: 1250px){
-	
-	#enlaces a{
-		font-size: 2.6em;
-	}
+
 
 	#social>a>i{
 		font-size: 1.2em;
@@ -695,16 +777,17 @@ footer{
 
 @media (max-width: 1150px) and (min-width: 991px){
 	
-	#enlaces a{
-		font-size: 2.2em;
-	}
+
 
 }
 
 @media (max-width: 990px) and (min-width:576px) {
-	
-	#enlaces a{
-		font-size: 2em;
+
+	#grande>tbody>tr>td:first-child>p{
+		font-size: 0.5em;
+	}
+	#grande th{
+		font-size: 1em;
 	}
 
 }
