@@ -47,6 +47,16 @@ color: #FFFFFF;
 	background-color: #101010;
 	box-shadow: rgba(255, 255, 255, 0.8) 106px 0px 160px 0px, rgba(255, 255, 255, 0.8) -106px 0px 160px 0px;
 }
+#cuerpo2{
+	padding-top: 14rem;
+	cursor: url('img/cursor_wow_1.png'), auto;
+	max-width: 1300px;
+	margin: auto;
+	/*background-image: url("img/fondo1.jpg");*/
+	padding-bottom: 3rem;
+	background-color: #101010;
+	box-shadow: rgba(255, 255, 255, 0.8) 106px 0px 160px 0px, rgba(255, 255, 255, 0.8) -106px 0px 160px 0px;
+}
 #title{
 	font-size: 4rem;
 }
@@ -201,6 +211,12 @@ p,label,h1,h2,legend{
 	grid-row: 5/-1;
 	grid-column: 8/-1;
 }
+#contenedor_ajedrez{
+	width: 100%;
+	display: grid;
+	grid-template-rows: 90vh;
+	grid-template-columns: 2fr auto 1fr;
+}
 
 #ajedrez{
 	width: 100%;
@@ -208,7 +224,7 @@ p,label,h1,h2,legend{
 	display: grid;
 	grid-template-rows: repeat(8,100px);
 	grid-template-columns: repeat(9,100px);
-	margin-left: 240px;
+	
 }
 #ajedrez div{
 	display: flex;
