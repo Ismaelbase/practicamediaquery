@@ -36,7 +36,7 @@ color: #FFFFFF;
 	margin-left: 0.55rem;
 }
 #cuerpo{
-	padding-top: 12rem;
+	padding-top: 15rem;
 	cursor: url('img/cursor_wow_1.png'), auto;
 	max-width: 1300px;
 	margin: auto;
@@ -45,7 +45,9 @@ color: #FFFFFF;
 	background-color: #101010;
 	box-shadow: rgba(255, 255, 255, 0.8) 106px 0px 160px 0px, rgba(255, 255, 255, 0.8) -106px 0px 160px 0px;
 }
-
+#title{
+	font-size: 4rem;
+}
 nav{
 	cursor: url('img/cursor_wow_1.png'), auto;
 }
@@ -79,7 +81,7 @@ nav{
 
 }
 #boton1{
-	width: 79%;
+	width: 400px;
 	margin-right: 33rem;
 }
 #enlaces{
@@ -97,6 +99,7 @@ nav{
 }
 #enlaces a{
 	font-size: 2em;
+
 	text-decoration: none;
 	color: white;
 	font-family: Fuente1;
@@ -115,9 +118,11 @@ nav{
   -webkit-text-stroke-color: #000000;
 }
 i{
+	padding-right: 0.5rem;
+	padding-top: 0.4rem;
+	padding-bottom: 0px;
 	color: white;
-	padding-left: 1rem;
-	font-size: 2rem;
+	font-size: 1.8rem;
 	cursor: url('img/cursor_wow_2.png'), auto;
 	-webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #000000;
@@ -127,7 +132,9 @@ body{
 	margin: 0px;
 	background-color: #101010;
 }
-
+#social{
+	display: flex;
+}
 #menu input{
 	background-color: #101010;
 	border: #8b8a8b;
@@ -510,11 +517,13 @@ th{
 
 @media (max-width:575px){
 	#enlaces{
+		display: flex;
 		width: 100%;
+		flex-wrap: nowrap;
 	}
 	#boton1{
 		text-align: center;
-		width: 100%;
+		width: 400px;
 		margin: 0px;
 	}
 	#logo{
@@ -540,6 +549,7 @@ th{
 		justify-content: space-evenly;
 	}
 	#social2{
+		padding-top: 1rem;
 		display: flex;
 		justify-content: center;
 		
@@ -551,7 +561,8 @@ th{
 	}
 	#enlaces .animacion{
 		font-size: 1.5rem;
-		margin-left: 2rem;
+		margin-left: 0.4rem;
+		margin-right: 0.4rem;
 		padding-bottom: 1rem;
 	}
 	#social{
@@ -706,7 +717,6 @@ th{
 }
 
 
-
 .animacion{
   position: relative;
 }
@@ -742,8 +752,9 @@ footer{
 @media (max-width: 1500px){
 
 	#social>a>i{
-		font-size: 1.7em;
+		
 	}
+
 	#datos1,#datos2{
 		display: block;
 		justify-content: space-between;
@@ -762,7 +773,7 @@ footer{
 
 
 	#social>a>i{
-		font-size: 1.5em;
+		
 	}
 }
 
@@ -770,7 +781,7 @@ footer{
 
 
 	#social>a>i{
-		font-size: 1.2em;
+		font-size: 1.5em;
 		padding-left: 0.4rem;
 	}
 }
