@@ -72,6 +72,7 @@ nav{
   min-width:140px;
   min-height:140px;
 	padding-right: 0px;
+	margin-left: 2rem;
 	cursor: url('img/cursor_wow_2.png'), auto;
 
 }
@@ -156,6 +157,69 @@ body>div>h2:first-child{
 }
 p,label,h1,h2,legend{
 	color: white;
+}
+
+#collage{
+	display: grid;
+	height: 90vh;
+	grid-template-rows: repeat(12,1fr);
+	grid-template-columns: repeat(12,1fr);
+}
+#collage img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+#collage1{
+	grid-row: 1/4;
+	grid-column: 1/8;
+}
+#collage2{
+	grid-row: 1/5;
+	grid-column: 8/-1;
+}
+#collage3{
+	grid-row: 4/7;
+	grid-column: 1/4;
+}
+#collage4{
+	grid-row: 4/-1;
+	grid-column: 4/8;
+}
+#collage5{
+	grid-row: 7/-1;
+	grid-column: 1/4;
+}
+#collage6{
+	grid-row: 5/-1;
+	grid-column: 8/-1;
+}
+
+#ajedrez{
+	width: 100%;
+	margin: auto;
+	display: grid;
+	grid-template-rows: repeat(8,100px);
+	grid-template-columns: repeat(9,100px);
+	margin-left: 240px;
+}
+#ajedrez div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#ajedrez img{
+	width: 80%;
+}
+
+#ajedrez>div:nth-child(2n){
+	background-color: #d17e4f;
+}
+#ajedrez>div:nth-child(2n+1){
+	background-color: #455660;
+}
+#ajedrez>div:nth-child(9n){
+	background-color: #101010;
 }
 
 button {
@@ -528,6 +592,8 @@ th{
 	}
 	#logo{
 		order: -2;
+		margin-left: 0px;
+		margin-right: 2rem;
 	}
 	#datos1{
 		margin: 0px;
@@ -542,9 +608,6 @@ th{
 		width: 100%;
 		box-sizing: content-box;
 	}
-	#pequeña .clase_p{
-		font-size: 0.2rem;
-	}
 	#menu{
 		justify-content: space-evenly;
 	}
@@ -557,7 +620,7 @@ th{
 
 	#menu>img{
 		width: 20%;
-		margin-left: 1rem;
+		margin-left: 5rem;
 	}
 	#enlaces .animacion{
 		font-size: 1.5rem;
