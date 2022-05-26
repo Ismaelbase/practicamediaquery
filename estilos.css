@@ -19,6 +19,8 @@ color: #FFFFFF;
 
 }
 
+
+
 #intro button{
 
 }
@@ -142,6 +144,11 @@ body{
 	color: white;
 	font-family: Fuente1;
 }
+#menu form{
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 5px;
+}
 #menu label{
 	-webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #000000;
@@ -209,18 +216,25 @@ p,label,h1,h2,legend{
 	align-items: center;
 }
 #ajedrez img{
+	
 	width: 80%;
 }
 
+
 #ajedrez>div:nth-child(2n){
-	background-color: #d17e4f;
+
+	background-image: url("img/fondo4.png");
+	
 }
+
 #ajedrez>div:nth-child(2n+1){
-	background-color: #455660;
-}
+
+	background-image: url("img/fondo3.png");
+	}
 #ajedrez>div:nth-child(9n){
-	background-color: #101010;
+	background-image: url("img/fondo5.png");
 }
+
 
 button {
   display: inline-block;
@@ -589,6 +603,7 @@ th{
 		text-align: center;
 		width: 400px;
 		margin: 0px;
+		margin-top: 10px;
 	}
 	#logo{
 		order: -2;
@@ -614,8 +629,12 @@ th{
 	#social2{
 		padding-top: 1rem;
 		display: flex;
+
 		justify-content: center;
 		
+	}
+	#social2 a{
+		padding-right: 2rem;
 	}
 
 	#menu>img{
