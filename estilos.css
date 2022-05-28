@@ -218,6 +218,7 @@ p,label,h1,h2,legend{
 	display: grid;
 	grid-template-rows: 90vh;
 	grid-template-columns: 2fr auto 1fr;
+	margin-bottom: 10rem;
 }
 
 #ajedrez{
